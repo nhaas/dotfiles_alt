@@ -1,7 +1,14 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean: ['~']
 
 - link:
     ~/.profile: profile
     ~/.bashrc: bashrc
+    ~/.emacs.d:
+      path: doom-emacs/.emacs.d/
 
 

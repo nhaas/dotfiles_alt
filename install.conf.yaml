@@ -6,9 +6,9 @@
 - clean: ['~']
 
 - link:
-    ~/.profile: profile
-    ~/.bashrc: bashrc
+    ~/.profile: .profile
+    ~/.bashrc: .bashrc
     ~/.emacs.d:
       path: doom-emacs/.emacs.d/
-
-
+    ~/.doom.d:
+      path: doom-emacs/doom.d/

@@ -26,7 +26,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export PATH="$HOME/.cargo/bin:$PATH"
+# Include Rust binaries into PATH if it exists
+if [ -f ~/.cargo/env ]; then
+    . ~/.cargo/env
+fi
+
 
 # Include tab-completion for Bash shell
 if [ -f ~/.config/exercism/exercism_completion.bash ]; then

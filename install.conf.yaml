@@ -9,6 +9,9 @@
     ~/.profile: .profile
     ~/.bashrc: .bashrc
     ~/.emacs.d:
-      path: doom-emacs/.emacs.d/
+      path: doom-emacs/.emacs.d
     ~/.doom.d:
-      path: doom-emacs/doom.d/
+      path: doom-emacs/doom.d
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

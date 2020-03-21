@@ -51,3 +51,9 @@
 ;;
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
+
+;; Maximize on startup
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+;; Set backup directory so emacs doesn't leave *~ files all over the place
+(setq backup-directory-alist `(("." . "~/.emacs_saves")))

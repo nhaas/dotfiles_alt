@@ -57,3 +57,6 @@
 
 ;; Set backup directory so emacs doesn't leave *~ files all over the place
 (setq backup-directory-alist `(("." . "~/.emacs_saves")))
+
+;; Tell Rustic mode to use rust-analyzer instead of RLS
+(setq rustic-lsp-server 'rust-analyzer)
